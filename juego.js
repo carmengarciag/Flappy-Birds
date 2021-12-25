@@ -90,7 +90,7 @@ function loop () {
             (personaje.y <= pipes[i].y + upperpipe.height ||
                 personaje.y + bird.height >= pipes[i].y + constant)
                 || personaje.y + bird.height >= ctx.canvas.height - floor.height){
-            location.reload()
+                window.location.href = window.location.href
         }
 
         if(pipes[i].x == 50){
